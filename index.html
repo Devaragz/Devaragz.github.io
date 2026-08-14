@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devarag P | Software Engineer</title>
+    <!-- amCharts 4 Libraries -->
+    <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/maps.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/geodata/worldLow.js"></script>
+    <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>if(localStorage.getItem('theme') === 'light') document.body.classList.add('light-mode');</script>
+    <nav>
+        <a href="index.html" class="logo">DP</a>
+        <div class="nav-links">
+            <a href="projects.html">Projects</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="uses.html">Uses</a>
+            <a href="assets/devarag resume.pdf" target="_blank" class="resume-btn">
+                Resume 
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+            </a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Devarag P</h1>
+        <h2>Software Engineer</h2>
+    </header>
+
+    <main class="container">
+        
+        <!-- Section Heading -->
+        <div class="section-header">
+            <h3>Projects</h3>
+        </div>
+
+        <div class="slider-section">
+            <div class="slider-track">
+                <!-- SET 1 -->
+                <a href="miniredis.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                        <span class="slide-date">C++ / Cache</span>
+                    </div>
+                    <div class="slide-title">MiniRedis</div>
+                    <div class="slide-desc">Custom LRU Cache with persistent MySQL DB integration.</div>
+                </a>
+                
+                <a href="matchengine.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="2" x2="7" y2="22"></line><rect x="3" y="6" width="8" height="8" rx="1"></rect><line x1="17" y1="2" x2="17" y2="22"></line><rect x="13" y="10" width="8" height="10" rx="1"></rect></svg>
+                        <span class="slide-date">C++ / Systems</span>
+                    </div>
+                    <div class="slide-title">MatchEngine</div>
+                    <div class="slide-desc">High-performance low-latency order matching engine.</div>
+                </a>
+                
+                <a href="subscout.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"></path><path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path><path d="M3 22v-6h6"></path><path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path></svg>
+                        <span class="slide-date">Python / API</span>
+                    </div>
+                    <div class="slide-title">SubScout</div>
+                    <div class="slide-desc">Backend service for automated subscription tracking.</div>
+                </a>
+                
+                <a href="clinicdb.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="9" x2="9" y2="21"></line></svg>
+                        <span class="slide-date">MySQL</span>
+                    </div>
+                    <div class="slide-title">Clinic DBMS</div>
+                    <div class="slide-desc">Structured database management system for clinic records.</div>
+                </a>
+
+                <a href="smartglove.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 11V6a2 2 0 0 0-4 0v4"></path><path d="M14 10V5a2 2 0 0 0-4 0v5"></path><path d="M10 10.5V4a2 2 0 0 0-4 0v9.5"></path><path d="M6 14v-2a2 2 0 0 0-4 0v5c0 3.31 2.69 6 6 6h3c3.87 0 7-3.13 7-7v-5a2 2 0 0 0-4 0"></path></svg>
+                        <span class="slide-date">IoT</span>
+                    </div>
+                    <div class="slide-title">SmartGlove</div>
+                    <div class="slide-desc">IoT-based gesture to voice hardware integration.</div>
+                </a>
+
+                <a href="threadpool.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                        <span class="slide-date">C++ / Concurrency</span>
+                    </div>
+                    <div class="slide-title">ThreadPool</div>
+                    <div class="slide-desc">Custom C++ thread pool engine managing concurrent tasks.</div>
+                </a>
+
+                <!-- SET 2 (Duplicate for Infinite Scroll) -->
+                <a href="miniredis.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line></svg>
+                        <span class="slide-date">C++ / Cache</span>
+                    </div>
+                    <div class="slide-title">MiniRedis</div>
+                    <div class="slide-desc">Custom LRU Cache with persistent MySQL DB integration.</div>
+                </a>
+                
+                <a href="matchengine.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="2" x2="7" y2="22"></line><rect x="3" y="6" width="8" height="8" rx="1"></rect><line x1="17" y1="2" x2="17" y2="22"></line><rect x="13" y="10" width="8" height="10" rx="1"></rect></svg>
+                        <span class="slide-date">C++ / Systems</span>
+                    </div>
+                    <div class="slide-title">MatchEngine</div>
+                    <div class="slide-desc">High-performance low-latency order matching engine.</div>
+                </a>
+                
+                <a href="subscout.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"></path><path d="M3 12a9 9 0 0 1 15-6.7L21 8"></path><path d="M3 22v-6h6"></path><path d="M21 12a9 9 0 0 1-15 6.7L3 16"></path></svg>
+                        <span class="slide-date">Python / API</span>
+                    </div>
+                    <div class="slide-title">SubScout</div>
+                    <div class="slide-desc">Backend service for automated subscription tracking.</div>
+                </a>
+                
+                <a href="clinicdb.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="9" x2="9" y2="21"></line></svg>
+                        <span class="slide-date">MySQL</span>
+                    </div>
+                    <div class="slide-title">Clinic DBMS</div>
+                    <div class="slide-desc">Structured database management system for clinic records.</div>
+                </a>
+
+                <a href="smartglove.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 11V6a2 2 0 0 0-4 0v4"></path><path d="M14 10V5a2 2 0 0 0-4 0v5"></path><path d="M10 10.5V4a2 2 0 0 0-4 0v9.5"></path><path d="M6 14v-2a2 2 0 0 0-4 0v5c0 3.31 2.69 6 6 6h3c3.87 0 7-3.13 7-7v-5a2 2 0 0 0-4 0"></path></svg>
+                        <span class="slide-date">IoT</span>
+                    </div>
+                    <div class="slide-title">SmartGlove</div>
+                    <div class="slide-desc">IoT-based gesture to voice hardware integration.</div>
+                </a>
+
+                <a href="threadpool.html" class="project-slide">
+                    <div class="slide-icon-area">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"></circle><circle cx="6" cy="12" r="3"></circle><circle cx="18" cy="19" r="3"></circle><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"></line><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"></line></svg>
+                        <span class="slide-date">C++ / Concurrency</span>
+                    </div>
+                    <div class="slide-title">ThreadPool</div>
+                    <div class="slide-desc">Custom C++ thread pool engine managing concurrent tasks.</div>
+                </a>
+            </div>
+            <button class="all-projects-btn" onclick="window.location.href='projects.html'">All Projects</button>
+        </div>
+
+        <div class="section-header">
+            <h3>About Me</h3>
+        </div>
+
+        <div class="bento-layout">
+            <div class="bento-left">
+                <div class="card location-card">
+                    <div class="location-pin">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        Kerala, India
+                    </div>
+                    <div id="chartdiv"></div>
+                </div>
+                
+                <div class="age-social-row">
+                    <div class="card">
+                        <div class="card-header">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            Age
+                        </div>
+                        <div class="huge-number" id="age-counter">0</div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                            Socials
+                        </div>
+                        <ul class="socials-list">
+                            <li><a href="https://github.com/Devaragz" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg> GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/in/devarag-p-b37418246" target="_blank"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg> LinkedIn</a></li>
+                            <li><a href="mailto:devaragzz10@gmail.com"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Email</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Animated Skills Marquee Card -->
+                <div class="card skills-card">
+                    <div class="card-header skills-header-wrap">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                        Skills
+                    </div>
+                    <div class="skills-slider-track">
+                        <!-- Set 1 -->
+                        <a href="skills.html" class="skill-item-mini" title="C++"><img src="assets/cpp.svg" alt="C++" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Python"><img src="assets/py.svg" alt="Python" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="MySQL"><img src="assets/msq.svg" alt="MySQL" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Git"><img src="assets/git.svg" alt="Git" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Linux"><img src="assets/linux.svg" alt="Linux" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="GitHub"><img src="assets/gt.svg" alt="GitHuub" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Bash"><img src="assets/bs.svg" alt="Java" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="VS Code"><img src="assets/vs.svg" alt="Java" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="GitHub Copilot"><img src="assets/gtcop.svg" alt="GiHub Copilot" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Algorithms"><img src="assets/algo.svg" alt="Algorithms" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Data Structures"><img src="assets/dsa.svg" alt="DSA" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Java"><img src="assets/java.svg" alt="Java" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="CSS"><img src="assets/css3.svg" alt="Java" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="HTML"><img src="assets/html5.svg" alt="Java" class="theme-icon"></a>
+                    
+                        <!-- Set 2 (Duplicate for seamless infinite scroll loop) -->
+                        <a href="skills.html" class="skill-item-mini" title="C++"><img src="assets/cpp.svg" alt="C++" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Python"><img src="assets/py.svg" alt="Python" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="MySQL"><img src="assets/msq.svg" alt="MySQL" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Git"><img src="assets/git.svg" alt="Git" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Linux"><img src="assets/linux.svg" alt="Linux" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="GitHub"><img src="assets/gt.svg" alt="GitHuub" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Bash"><img src="assets/bs.svg" alt="Java" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="VS Code"><img src="assets/vs.svg" alt="Java" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="GitHub Copilot"><img src="assets/gtcop.svg" alt="GiHub Copilot" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Algorithms"><img src="assets/algo.svg" alt="Algorithms" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Data Structures"><img src="assets/dsa.svg" alt="DSA" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="Java"><img src="assets/java.svg" alt="Java" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="CSS"><img src="assets/css3.svg" alt="Java" class="theme-icon"></a>
+                        <a href="skills.html" class="skill-item-mini" title="HTML"><img src="assets/html5.svg" alt="Java" class="theme-icon"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bento-right">
+                <div class="card edu-card">
+                    <div class="card-header">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        College
+                    </div>
+                    <div class="edu-title">Bachelor of Technology</div>
+                    <div class="edu-meta">IIIT Bhubaneswar • Expected Jul 2027</div>
+                    <div class="edu-grade">CGPA: 7.9 / 10</div>
+                </div>
+
+                <div class="card edu-card">
+                    <div class="card-header">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        Higher Secondary
+                    </div>
+                    <div class="edu-title">Class XII</div>
+                    <div class="edu-meta">JNV Malappuram • 2022</div>
+                    <div class="edu-grade">Grade: 95%</div>
+                </div>
+
+                <div class="card edu-card">
+                    <div class="card-header">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        Secondary
+                    </div>
+                    <div class="edu-title">Class X</div>
+                    <div class="edu-meta">JNV Malappuram • 2020</div>
+                    <div class="edu-grade">Grade: 93.66%</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact-section">
+            <div class="contact-left">
+                <h2>Let's make<br>something<br>great.</h2>
+            </div>
+            <div class="contact-right">
+                <h3>Contact me</h3>
+                <p>Fill out the form below and I will get back to you as soon as possible.</p>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="e2421182-ad07-4e2b-8046-875bc405893b">
+
+                    <!-- Honeypot Spam Protection (Hides bots automatically) -->
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label>Firstname</label>
+                            <input type="text" name="firstname" placeholder="John" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Lastname</label>
+                            <input type="text" name="lastname" placeholder="Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>E-Mail</label>
+                            <input type="email" name="email" placeholder="johndoe@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone number</label>
+                            <input type="tel" name="phone" placeholder="+91 00000 00000">
+                        </div>
+                    </div>
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label>Message</label>
+                        <textarea name="message" placeholder="Write your message here..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="assets/devarag resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="uses.html">Uses</a></li>
+                    <li><a href="mailto:devaragzz10@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-widget">
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem;">Local Time</p>
+                    <div id="local-time" style="font-size: 1rem; margin-bottom: 1rem; font-weight: 500;">Loading...</div>
+                    <div class="status-badge">
+                        <span class="status-dot"></span> Available Aug 2026
+                    </div>
+                    <select class="theme-select" id="themeToggle">
+                        <option value="dark">☾ Dark</option>
+                        <option value="light">☼ Light</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Built by Devarag P</p>
+            <div class="social-icons-footer">
+                <a href="https://github.com/Devaragz" target="_blank" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://linkedin.com/in/devarag-p-b37418246" target="_blank" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="mailto:devaragzz10@gmail.com" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // --- amCharts Globe Implementation ---
+        am4core.ready(function() {
+            am4core.useTheme(am4themes_animated);
+
+            // Create map instance
+            var chart = am4core.create("chartdiv", am4maps.MapChart);
+            chart.geodata = am4geodata_worldLow;
+            
+            // Disable Watermark
+            chart.logo.disabled = true;
+            
+            // Set orthographic projection (3D Globe)
+            chart.projection = new am4maps.projections.Orthographic();
+            chart.panBehavior = "rotateLongLat";
+            chart.deltaLongitude = -20; // Starting rotation
+            chart.deltaLatitude = 15;   // Tilt to see northern hemisphere
+            chart.padding(0,0,0,0);
+            
+            // --- Globe Sphere Edge & Ocean Background ---
+            chart.backgroundSeries.mapPolygons.template.polygon.fill = am4core.color("rgba(59, 130, 246, 0.12)");
+            chart.backgroundSeries.mapPolygons.template.polygon.stroke = am4core.color("rgba(59, 130, 246, 0.4)");
+            chart.backgroundSeries.mapPolygons.template.polygon.strokeWidth = 1.5;
+
+            // --- Latitude & Longitude Grid Lines ---
+            var graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
+            graticuleSeries.mapLines.template.line.stroke = am4core.color("rgba(59, 130, 246, 0.25)");
+            graticuleSeries.mapLines.template.line.strokeOpacity = 0.6;
+            
+            // --- Landmasses ---
+            var polygonSeries = chart.series.push(new am4maps.MapPolygonSeries());
+            polygonSeries.useGeodata = true;
+            
+            var polygonTemplate = polygonSeries.mapPolygons.template;
+            polygonTemplate.fill = am4core.color("#3b82f6"); 
+            polygonTemplate.stroke = am4core.color("rgba(59, 130, 246, 0.5)");
+            polygonTemplate.strokeWidth = 0.5;
+
+            var hs = polygonTemplate.states.create("hover");
+            hs.properties.fill = am4core.color("#8b5cf6"); 
+
+            // --- Location Pin (Odisha, India) ---
+            var imageSeries = chart.series.push(new am4maps.MapImageSeries());
+            var imageSeriesTemplate = imageSeries.mapImages.template;
+            var circle = imageSeriesTemplate.createChild(am4core.Circle);
+            circle.radius = 6;
+            circle.fill = am4core.color("#ff4b4b"); 
+            circle.stroke = am4core.color("#ffffff");
+            circle.strokeWidth = 2;
+            
+            var marker = imageSeries.mapImages.create();
+            marker.latitude = 10.8505;
+            marker.longitude = 76.2711;
+
+            // --- Rotation Speeds ---
+            var NORMAL_SPEED = 90000;  
+            var HOVER_SPEED  = 300000; 
+            var currentSpeed = NORMAL_SPEED;
+            let animation;
+
+            function startRotation(speed) {
+                if (animation) { animation.stop(); }
+                animation = chart.animate(
+                    { property: "deltaLongitude", to: chart.deltaLongitude + 3600 }, 
+                    speed, 
+                    am4core.ease.linear
+                );
+                animation.events.on("animationended", function() {
+                    startRotation(currentSpeed);
+                });
+            }
+
+            setTimeout(function() {
+                startRotation(NORMAL_SPEED);
+            }, 500);
+
+            // --- Mouse Pointer Hover Events (Slow down on hover) ---
+            var chartDiv = document.getElementById("chartdiv");
+            chartDiv.addEventListener("mouseenter", function() {
+                currentSpeed = HOVER_SPEED;
+                startRotation(HOVER_SPEED);
+            });
+
+            chartDiv.addEventListener("mouseleave", function() {
+                currentSpeed = NORMAL_SPEED;
+                startRotation(NORMAL_SPEED);
+            });
+
+            // Pause on mouse down (dragging) and resume after
+            chart.seriesContainer.events.on("down", function(){
+                if(animation){ animation.stop(); }
+            });
+            chart.seriesContainer.events.on("up", function(){
+                setTimeout(function() {
+                    startRotation(currentSpeed);
+                }, 1000);
+            });
+        });
+
+        // --- Existing Counter & Time Logic ---
+        const ageElement = document.getElementById('age-counter');
+        const targetAge = 22; 
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    let currentAge = 0;
+                    const ageInterval = setInterval(() => {
+                        if (currentAge >= targetAge) {
+                            clearInterval(ageInterval);
+                            ageElement.textContent = targetAge;
+                        } else {
+                            currentAge++;
+                            ageElement.textContent = currentAge;
+                        }
+                    }, 60);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        observer.observe(ageElement);
+
+        function updateTime() {
+            const timeDisplay = document.getElementById('local-time');
+            const now = new Date();
+            timeDisplay.textContent = `${now.toLocaleTimeString('en-GB', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Asia/Kolkata' })}, UTC +05:30`;
+        }
+        setInterval(updateTime, 1000); updateTime(); 
+
+        // --- Theme Toggle Logic with LocalStorage ---
+        const themeToggle = document.getElementById('themeToggle');
+        
+        // Set the dropdown to match the saved theme on load
+        if (localStorage.getItem('theme') === 'light') {
+            themeToggle.value = 'light';
+        }
+
+        // Save preference when the user changes it
+        themeToggle.addEventListener('change', (e) => {
+            if (e.target.value === 'light') {
+                document.body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.body.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>

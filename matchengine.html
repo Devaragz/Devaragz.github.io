@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatchEngine | Devarag P</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>if(localStorage.getItem('theme') === 'light') document.body.classList.add('light-mode');</script>
+    <nav>
+        <a href="index.html" class="logo">DP</a>
+        <div class="nav-links">
+            <a href="projects.html" class="active">Projects</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="uses.html">Uses</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="breadcrumbs">
+            <a href="projects.html">Projects</a> / <span>MatchEngine</span>
+        </div>
+
+        <div class="project-header-layout">
+            <div class="header-left">
+                <div class="featured-badge" style="background: #059669;">June 2026</div>
+                <h1>MatchEngine</h1>
+                <p class="subtitle">A multi-threaded, low-latency order matching engine engineered for microsecond execution and fault tolerance.</p>
+                <div class="tech-tags">
+                    <span>C++</span>
+                    <span>Low-Latency Systems</span>
+                    <span>Multithreading</span>
+                    <span>TCP Sockets</span>
+                    <span>Backend Architecture</span>
+                </div>
+            </div>
+
+            <div class="stats-card">
+                <h4>Statistics</h4>
+                <ul class="stats-list">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                        Started <strong>June 2026</strong>
+                    </li>
+                    <li>
+                        <img src="assets/tick.svg" class="theme-icon" style="width: 20px; height: 20px;">
+                        Status <strong>Stable</strong>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                        <a href="https://github.com/Devaragz/Match-engine" target="_blank">GitHub Repo <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M7 17l9.2-9.2M17 17V7H7"/></svg></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="content-body">
+            <h2>Description</h2>
+
+            <h3>Background</h3>
+            <p>Financial trading platforms require systems capable of processing thousands of orders per second with absolute precision. To push my systems engineering skills, I built a backend order matching engine designed to pair "buy" and "sell" network requests over TCP sockets with microsecond latency.</p>
+
+            <h3>Solution</h3>
+            <p>The solution bypasses slow database queries by maintaining a highly optimized in-memory Order Book using custom STL data structures. It actively throttles I/O rendering to decouple the core matching logic from terminal bottlenecks, ensuring maximum throughput.</p>
+            <!-- Demo Video Section goes right here, after they have context -->
+            <div style="margin: 2rem 0; border-radius: 12px; overflow: hidden; border: 1px solid var(--border-color); background: var(--card-bg);">
+                <video width="100%" autoplay muted loop playsinline controls preload="metadata" style="display: block;">
+                    <source src="assets/mteng.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <h3>Core Features</h3>
+            <p>The engine's performance relies entirely on optimized execution structures:</p>
+            <ul>
+                <li>Algorithmic Efficiency: Engineered in Modern C++ utilizing std::unordered_map and doubly linked lists (std::list) to achieve strictly O(1) time complexity for order lookups and cancellations.</li>
+                <li>Binary Disaster Recovery: Implemented a background thread using zero-cost memory serialization to dump active system state directly to disk, enabling instant restoration after server crashes.</li>
+                <li>Microsecond Profiling: Instrumented core matching loops with std::chrono to calculate and output P50, P90, and P99 latency percentiles under heavy concurrent network loads.</li>
+            </ul>
+
+            <h3>Learning Outcomes</h3>
+            <p>This project bridged the gap between theoretical data structures and high-performance systems architecture. It provided hands-on experience with thread synchronization, memory management, and identifying real-world bottlenecks like terminal I/O.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="assets/devarag resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="uses.html">Uses</a></li>
+                    <li><a href="mailto:devaragzz10@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-widget">
+                    <p style="color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.5rem;">Local Time</p>
+                    <div id="local-time" style="font-size: 1rem; margin-bottom: 1rem; font-weight: 500;">Loading...</div>
+                    <div class="status-badge">
+                        <span class="status-dot"></span> Available Aug 2026
+                    </div>
+                    <select class="theme-select" id="themeToggle">
+                        <option value="dark">☾ Dark</option>
+                        <option value="light">☼ Light</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Built by Devarag P</p>
+            <div class="social-icons-footer">
+                <a href="https://github.com/Devaragz" target="_blank" aria-label="GitHub">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://linkedin.com/in/devarag-p-b37418246" target="_blank" aria-label="LinkedIn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="mailto:devaragzz10@gmail.com" aria-label="Email">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function updateTime() {
+            const timeDisplay = document.getElementById('local-time');
+            const now = new Date();
+            timeDisplay.textContent = `${now.toLocaleTimeString('en-GB', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Asia/Kolkata' })}, UTC +05:30`;
+        }
+        setInterval(updateTime, 1000); updateTime(); 
+
+        // --- Theme Toggle Logic with LocalStorage ---
+        const themeToggle = document.getElementById('themeToggle');
+        
+        // Set the dropdown to match the saved theme on load
+        if (localStorage.getItem('theme') === 'light') {
+            themeToggle.value = 'light';
+        }
+
+        // Save preference when the user changes it
+        themeToggle.addEventListener('change', (e) => {
+            if (e.target.value === 'light') {
+                document.body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.body.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>

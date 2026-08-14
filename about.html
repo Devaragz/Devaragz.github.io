@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devarag P | About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>if(localStorage.getItem('theme') === 'light') document.body.classList.add('light-mode');</script>
+    <nav>
+        <a href="index.html" class="logo">DP</a>
+        <div class="nav-links">
+            <a href="projects.html">Projects</a>
+            <a href="about.html" class="active">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="uses.html">Uses</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="wiki-layout">
+            
+            <!-- Left Main Content Area -->
+            <div class="wiki-main">
+            
+                <h1>Devarag P</h1>
+                <p class="subtitle">Software engineer building high-performance systems and backend architecture.</p>
+
+                <!-- Contents Box -->
+                <div class="toc-box">
+                    <h3>Contents</h3>
+                    <ul>
+                        <li>1. <a href="#background">Early Life and Background</a></li>
+                        <li>2. <a href="#career">Career & Technical Execution</a></li>
+                        <li>3. <a href="#projects">Notable Systems & Projects</a></li>
+                        <li>4. <a href="#interests">Professional Focus & Technical Interests</a></li>
+                    </ul>
+                </div>
+
+                <!-- Section 1 -->
+                <section id="background" class="wiki-section">
+                    <h2>Early Life and Background</h2>
+                    <p>Born in 2004, my interest in computer science grew from a simple curiosity about how software works under the hood. Throughout my studies, I have focused heavily on core fundamentals like data structures, algorithms, and memory management. Instead of just jumping into high-level frameworks, I spend my time practicing algorithmic problem-solving and building a strong, practical foundation in how systems actually operate.</p>
+                </section>
+
+                <!-- Section 2 -->
+                <section id="career" class="wiki-section">
+                    <h2>Career & Technical Execution</h2>
+                    <p>I am currently focused on backend development and systems programming. I enjoy building projects that require custom data structures and direct database integration, primarily working with C++ and MySQL. My day-to-day involves solving algorithmic challenges and applying those concepts to hands-on projects, like building in-memory caches. Right now, my main goal is to write clean, efficient code and develop a practical understanding of how reliable software is built.</p>
+                </section>
+
+                <!-- Section 3 -->
+                <!-- Section 3 -->
+                <section id="projects" class="wiki-section">
+                    <h2>Notable Systems & Projects</h2>
+                    <p>Focused heavily on systems development, persistent data structures, and low-latency architecture.</p>
+                    <p><a href="miniredis.html" style="color: var(--text-main); font-weight: bold; text-decoration: underline;">MiniRedis:</a> Custom in-memory LRU cache with persistent database integration.</p>
+                    <p><a href="matchengine.html" style="color: var(--text-main); font-weight: bold; text-decoration: underline;">MatchEngine:</a> High-throughput, low-latency order matching architecture built under strict complexity constraints.</p>
+                </section>
+
+                <!-- Section 4 (Strictly Professional/Technical) -->
+                <section id="interests" class="wiki-section">
+                    <h2>Professional Focus & Technical Interests</h2>
+                    <p>Pursuing continuous technical optimization, systems architecture, and algorithmic mastery:</p>
+                    <p>• <strong>Systems Programming & C++:</strong> Understanding memory management and building custom data structures to see how things work under the hood.</p>
+                    <p>• <strong>Data Structures & Algorithms:</strong> Continuous problem-solving refinement via platforms like Code360 and advanced algorithmic modules.</p>
+                    <p>• <strong>Databases & Caching:</strong> Exploring how applications store and retrieve data efficiently, applying concepts like LRU caches and MySQL integration in my projects.</p>
+                </section>
+            </div>
+
+            <!-- Right Infobox Sidebar -->
+            <aside class="infobox">
+                <div class="infobox-header">Infobox</div>
+                <div class="infobox-title">Devarag P</div>
+                <div class="infobox-image">
+                    <img src="assets/dg.jpeg" alt="Devarag P" style="width: 100%; height: 100%; object-fit: cover; border-radius: 8px;">
+                </div>
+                <div class="infobox-data">
+                    <div class="infobox-row">
+                        <div class="infobox-label">Born</div>
+                        <div class="infobox-value">July 9, 2004 (age 22)<br>Kannur, Kerala, India</div>
+                    </div>
+                    <div class="infobox-row">
+                        <div class="infobox-label">Occupation</div>
+                        <div class="infobox-value">Software Engineer</div>
+                    </div>
+                    <div class="infobox-row">
+                        <div class="infobox-label">Technical Focus</div>
+                        <div class="infobox-value">C++, Systems Engineering, Backend Architecture, Data Structures</div>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="skills.html">Skills</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul>
+                    <li><a href="assets/devarag resume.pdf" target="_blank">Resume</a></li>
+                    <li><a href="uses.html">Uses</a></li>
+                    <li><a href="mailto:devaragzz10@gmail.com">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <div class="footer-widget">
+                    <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 0.5rem;">Local Time</p>
+                    <div id="local-time" style="font-size: 1.05rem; margin-bottom: 1rem; font-weight: 500;">Loading...</div>
+                    <div class="status-badge">
+                        <span class="status-dot"></span> Available Aug 2026
+                    </div>
+                    <select class="theme-select" id="themeToggle">
+                        <option value="dark">☾ Dark</option>
+                        <option value="light">☼ Light</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2026 Built by Devarag P</p>
+            <div class="social-icons-footer">
+                <a href="https://github.com/Devaragz" target="_blank" aria-label="GitHub">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                </a>
+                <a href="https://linkedin.com/in/devarag-p-b37418246" target="_blank" aria-label="LinkedIn">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                </a>
+                <a href="mailto:devaragzz10@gmail.com" aria-label="Email">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function updateTime() {
+            const timeDisplay = document.getElementById('local-time');
+            const now = new Date();
+            timeDisplay.textContent = `${now.toLocaleTimeString('en-GB', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit', timeZone: 'Asia/Kolkata' })}, UTC +05:30`;
+        }
+        setInterval(updateTime, 1000); updateTime(); 
+
+        // --- Theme Toggle Logic with LocalStorage ---
+        const themeToggle = document.getElementById('themeToggle');
+        
+        // Set the dropdown to match the saved theme on load
+        if (localStorage.getItem('theme') === 'light') {
+            themeToggle.value = 'light';
+        }
+
+        // Save preference when the user changes it
+        themeToggle.addEventListener('change', (e) => {
+            if (e.target.value === 'light') {
+                document.body.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+            } else {
+                document.body.classList.remove('light-mode');
+                localStorage.setItem('theme', 'dark');
+            }
+        });
+    </script>
+</body>
+</html>
